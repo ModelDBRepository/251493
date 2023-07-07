@@ -18,7 +18,7 @@ AMP = 2.1 			// nA, amplitude of current injection to trigger postsynaptic spike
 DUR = 5.0			// ms, duration of the current injection
 WARM_UP = 2300 		// ms, delay from beginning of simulation
 COOL_DOWN = 100		// ms, silence phase after stimulation
-WEIGHT = 0.0035		// µS, conductance of (single) synaptic potentials
+WEIGHT = 0.0035		// ÂµS, conductance of (single) synaptic potentials
 
 // ## Stimulation protocol vectors
 PRE_REPS = new Vector()		// number of pre-events
@@ -39,7 +39,7 @@ load_file("models/L5PCbiophys4.hoc")
 load_file("models/L5PCtemplate.hoc")
 L5PC = new L5PCtemplate(morphology_file)
 
-L5PC.dend[80] syn_loc = new SectionRef()		// proximal basal dendrite: 55 µm at center of the section
+L5PC.dend[80] syn_loc = new SectionRef()		// proximal basal dendrite: 55 Âµm at center of the section
 
 // ## Create synapse
 syn_loc.sec syn = new Syn4P(0.5) 	// at the specified branch
