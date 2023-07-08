@@ -1,5 +1,5 @@
 /*
-Stimulus protocol as used by Sjöström et al. (2001)
+Stimulus protocol as used by SjÃ¶strÃ¶m et al. (2001)
 Demonstrating the synaptic plasticity rule by Ebner et al. (2019)
 https://doi.org/10.1016/j.celrep.2019.11.068
 Made to work with the Hay et al. (2011) L5b pyramidal cell model
@@ -20,8 +20,8 @@ AMP = 2.7		// nA, amplitude of current injection to trigger postsynaptic spikes
 DUR = 5.0		// ms, duration of the current injection
 WARM_UP = 2300 	// ms, silence phase before stimulation
 COOL_DOWN = 100	// ms, silence phase after stimulation
-WEIGHT = 0.0035	// µS, conductance of (single) synaptic potentials
-LOCATION = 1	// 1 ... proximal (90 µm) / 2 ... distal (669 µm)
+WEIGHT = 0.0035	// ÂµS, conductance of (single) synaptic potentials
+LOCATION = 1	// 1 ... proximal (90 Âµm) / 2 ... distal (669 Âµm)
 
 freqs = new Vector() // stimulation frequencies (Hz)
 // freqs.append(0.1, 10, 20, 40, 50)	// use this to include 0.1 Hz condition. This will take some time.
@@ -180,9 +180,9 @@ vrec_prox.line(voltplot, 1, 2)
 vrec_dist.line(voltplot, 3, 2)
 objref compplot, compvec1, compvec2
 compvec1 = new Vector()
-compvec1.append(14, 29, 53, 56)		// Experimental data (Sjöström et al., 2001) pre-post
+compvec1.append(14, 29, 53, 56)		// Experimental data (SjÃ¶strÃ¶m et al., 2001) pre-post
 compvec2 = new Vector()
-compvec2.append(-41, -35, 56, 75)	// Experimental data (Sjöström et al., 2001) post-pre
+compvec2.append(-41, -35, 56, 75)	// Experimental data (SjÃ¶strÃ¶m et al., 2001) post-pre
 compplot = new Graph(0)
 compplot.size(0, 3, -50, 80)
 compplot.view(-0.3, -50, 3.3, 130, 65, 105, 300, 200)
